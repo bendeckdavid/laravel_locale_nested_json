@@ -1,0 +1,1 @@
+# laravel_locale_nested_json
