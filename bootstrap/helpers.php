@@ -26,7 +26,7 @@ if (! function_exists('__')) {
 
         // Return .json fallback
         $fallback = Arr::get(trans()->get('*', [], config('app.fallback_locale')), $key);
-        if ($fallback !== null) return trans_replacements($search, $replace);
+        if ($fallback !== null) return trans_replacements($fallback, $replace);
 
         // Return key name if not found
         else return $key;
